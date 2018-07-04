@@ -76,7 +76,7 @@ void SERVER_INIT()
   //Ethernet
   Serial.println(F("SERVER Init"));
   byte mac[] = { 0x90, 0xA2, 0xDA, 0x00, 0x4A, 0xE1 };
-  IPAddress ip(192, 168, 0, 2);
+  IPAddress ip(192, 168, 1, 100);
   //Connect with DHCP
   Ethernet.begin(mac, ip);
   Serial.println(F("Ethernet begin"));
